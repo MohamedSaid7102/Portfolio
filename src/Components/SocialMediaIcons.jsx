@@ -8,7 +8,6 @@ library.add(fab);
 function SocialMediaIcons() {
   return (
     <div className="contacts">
-      <div className="contacts__front-bocket"></div>
       <ul className="social-media-icons">
         <li>
           <a
@@ -65,6 +64,15 @@ function SocialMediaIcons() {
           </a>
         </li>
       </ul>
+      <h3 className="contacts__info">
+        MY Name Is Mohamed Said Shelf
+        <br /><br />
+        I'm A Front-end Developer
+        <br />
+        &
+        <br />
+        A Computer Science Student
+      </h3>
     </div>
   );
 }

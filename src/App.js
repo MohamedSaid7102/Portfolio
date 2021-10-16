@@ -1,19 +1,103 @@
-function App() {
+import Particles from 'react-tsparticles';
+
+const App = () => {
+  const particlesInit = (main) => {
+    console.log(main);
+
+    // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
+  };
+
+  const particlesLoaded = (container) => {
+    console.log(container);
+  };
+
   return (
-    <div className="App">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed veniam,
-      deserunt, distinctio aperiam ullam ratione nesciunt impedit dolor at, amet
-      porro odit libero voluptate id? Ipsa ducimus voluptates dolorum nemo,
-      consectetur distinctio ad consequatur perferendis vel nam, quaerat
-      similique dolor libero facere praesentium nihil vero fugit inventore ea
-      voluptas enim rerum illum saepe. Commodi nostrum dolorum quidem cupiditate
-      molestiae odit beatae deleniti minus vel esse? Ipsum alias voluptates,
-      dolore mollitia vitae quisquam harum autem aliquam natus ipsa at quam
-      obcaecati veniam doloremque animi. Eaque suscipit ratione pariatur!
-      Aliquam cupiditate ipsam alias mollitia ex quibusdam laboriosam dolores!
-      Expedita magnam libero accusamus?
-    </div>
+    <>
+      <Particles
+      id="tsparticles"
+      init={particlesInit}
+      loaded={particlesLoaded}
+      options={{
+        background: {
+          color: {
+            value: "#eee",
+          },
+        },
+        fpsLimit: 100,
+        interactivity: {
+          detectsOn: "canvas",
+          events: {
+            onClick: {
+              enable: true,
+              mode: "push",
+            },
+            onHover: {
+              enable: true,
+              mode: "repulse",
+            },
+            resize: true,
+          },
+          modes: {
+            bubble: {
+              distance: 400,
+              duration: 2,
+              opacity: 0.8,
+              size: 40,
+            },
+            push: {
+              quantity: 4,
+            },
+            repulse: {
+              distance: 200,
+              duration: 0.4,
+            },
+          },
+        },
+        particles: {
+          color: {
+            value: "#333",
+          },
+          links: {
+            color: "#444",
+            distance: 150,
+            enable: true,
+            opacity: 0.5,
+            width: 1,
+          },
+          collisions: {
+            enable: true,
+          },
+          move: {
+            direction: "none",
+            enable: true,
+            outMode: "bounce",
+            random: false,
+            speed: 2,
+            straight: false,
+          },
+          number: {
+            density: {
+              enable: true,
+              value_area: 800,
+            },
+            value: 80,
+          },
+          opacity: {
+            value: 0.5,
+          },
+          shape: {
+            type: "circle",
+          },
+          size: {
+            random: true,
+            value: 5,
+          },
+        },
+        detectRetina: true,
+      }}
+    />
+    </>
   );
-}
+};
 
 export default App;

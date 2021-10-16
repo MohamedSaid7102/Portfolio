@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed veniam,
+      deserunt, distinctio aperiam ullam ratione nesciunt impedit dolor at, amet
+      porro odit libero voluptate id? Ipsa ducimus voluptates dolorum nemo,
+      consectetur distinctio ad consequatur perferendis vel nam, quaerat
+      similique dolor libero facere praesentium nihil vero fugit inventore ea
+      voluptas enim rerum illum saepe. Commodi nostrum dolorum quidem cupiditate
+      molestiae odit beatae deleniti minus vel esse? Ipsum alias voluptates,
+      dolore mollitia vitae quisquam harum autem aliquam natus ipsa at quam
+      obcaecati veniam doloremque animi. Eaque suscipit ratione pariatur!
+      Aliquam cupiditate ipsam alias mollitia ex quibusdam laboriosam dolores!
+      Expedita magnam libero accusamus?
     </div>
   );
 }

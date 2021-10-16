@@ -5,7 +5,9 @@ import Background from './Components/Background';
 const App = () => {
   return (
     <React.Fragment>
+      {/* Background */}
       <Background />
+      {/* Info card */}
       <div class="portfolio-wrapper">
         <AvatarImg />
       </div>

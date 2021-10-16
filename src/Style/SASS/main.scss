@@ -13,6 +13,10 @@
   -o-transition: all 150ms ease-in-out;
 }
 
+::selection {
+  background-color: lightblue;
+}
+
 html,
 body {
   font-size: 62.5%;

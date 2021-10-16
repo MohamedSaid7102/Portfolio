@@ -155,4 +155,47 @@ body {
   position: absolute;
   left: 0;
   top: 50%;
+}
+.contacts .social-media-icons {
+  display: flex;
+  gap: 2rem;
+}
+.contacts .social-media-icons li {
+  padding: 2rem;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  cursor: pointer;
+  list-style: none;
+}
+.contacts .social-media-icons li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.fa-twitter {
+  color: #55acee;
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+
+.fa-whatsapp {
+  color: #4dc247;
+}
+
+.fa-github {
+  color: #000000;
+}
+
+.fa-linkedin {
+  color: #007bb5;
+}
+
+.fa-instagram {
+  color: #bc1888;
 }/*# sourceMappingURL=main.css.map */

@@ -9,7 +9,7 @@ function SocialMediaIcons() {
   return (
     <div className="contacts">
       <div className="contacts__front-bocket"></div>
-      <ul>
+      <ul className="social-media-icons">
         <li>
           <a
             href="https://twitter.com/shelf_mohamed"

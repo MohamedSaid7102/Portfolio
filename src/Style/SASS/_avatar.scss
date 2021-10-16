@@ -1,0 +1,25 @@
+.MuiAvatar-root.MuiAvatar-circular.MuiAvatar-colorDefault {
+  width: 200px;
+  height: 200px;
+  font-size: 5rem;
+  cursor: pointer;
+}
+.MuiAvatar-root.MuiAvatar-circular.MuiAvatar-colorDefault:hover {
+  -webkit-animation: 0.5s linear 0s infinite alternate puls_animation;
+  animation: 0.5s linear 0s infinite alternate puls_animation;
+}
+
+@keyframes puls_animation {
+  0% {
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.966);
+  }
+  30% {
+    box-shadow: 0 0 45px rgba(37, 73, 82, 0.432);
+  }
+  60% {
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.726);
+  }
+  100% {
+    box-shadow: 0 0 0 rgba(37, 73, 82, 0.432);
+  }
+}

@@ -32,8 +32,8 @@ body {
 body {
   font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 2.5rem;
-  min-height: 100vh;
   position: relative;
+  min-height: 100vh;
 }
 
 .portfolio-wrapper {
@@ -83,6 +83,14 @@ body {
     box-shadow: 0 0 0 rgba(26, 49, 54, 0.432);
   }
 }
+.portfolio-wrapper {
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
 .portfolio-wrapper .avatar-wrapper {
   display: flex;
   flex-direction: column;
@@ -105,6 +113,11 @@ body {
   white-space: nowrap;
 }
 
+@media (max-width: 1000px) {
+  .portfolio-wrapper {
+    max-width: 90%;
+  }
+}
 @media (max-width: 500px) {
   .portfolio-wrapper .avatar-wrapper .MuiAvatar-root {
     width: 120px;
@@ -113,4 +126,33 @@ body {
   .portfolio-wrapper .avatar-wrapper .my-name {
     font-size: 3rem;
   }
+}
+.contacts {
+  max-width: 100%;
+  min-width: 300px;
+  min-height: 350px;
+  word-wrap: break-word;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #fff;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.2);
+  position: relative;
+}
+.contacts .contacts__front-bocket {
+  width: 100%;
+  border-top: 1px solid #fff;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  position: absolute;
+  left: 0;
+  top: 50%;
 }/*# sourceMappingURL=main.css.map */

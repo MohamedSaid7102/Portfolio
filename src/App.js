@@ -1,6 +1,7 @@
 import React from 'react';
 import AvatarImg from './Components/AvatarImg';
 import Background from './Components/Background';
+import SocialMediaIcons from './Components/SocialMediaIcons';
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       {/* Info card */}
       <div class="portfolio-wrapper">
         <AvatarImg />
+        <SocialMediaIcons />
       </div>
     </React.Fragment>
   );

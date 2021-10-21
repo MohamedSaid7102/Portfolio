@@ -20,25 +20,32 @@
   justify-content: center;
   align-items: center;
   gap: 3rem;
+
   .avatar-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    margin-top: 4rem;
+
     .MuiAvatar-root {
       width: 150px;
       height: 150px;
       cursor: pointer;
       font-size: 5rem;
     }
+
     .MuiAvatar-root:hover {
       -webkit-animation: 1s linear 0s infinite alternate puls_animation;
       animation: 1s linear 0s infinite alternate puls_animation;
     }
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+
     .my-name {
       font-family: 'Festive', cursive;
       white-space: nowrap;
+      z-index: 2;
     }
   }
 }

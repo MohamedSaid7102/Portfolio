@@ -1,6 +1,5 @@
 .contacts {
-  max-width: 100%;
-  min-width: 300px;
+  max-width: 800px;
   min-height: 350px;
   word-wrap: break-word;
   background: rgba(255, 255, 255, 0.2);
@@ -22,9 +21,13 @@
     letter-spacing: 2px;
     line-height: 1.5;
   }
+
   .social-media-icons {
     display: flex;
     gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 
     li {
       padding: 2rem;
@@ -51,6 +54,7 @@
         color: #fff;
       }
     }
+
     li::before {
       content: '';
       display: block;
@@ -72,7 +76,8 @@
       -o-transition: 0.5s;
     }
 
-    li:hover,li:focus {
+    li:hover,
+    li:focus {
       &::before {
         transform: skewX(45deg) translateX(-150px);
         -webkit-transform: skewX(45deg) translateX(-150px);
@@ -82,7 +87,6 @@
       }
     }
   }
-
 }
 
 // Social media icons color

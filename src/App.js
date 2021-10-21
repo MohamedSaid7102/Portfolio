@@ -5,7 +5,7 @@ import SocialMediaIcons from './Components/SocialMediaIcons';
 
 const App = () => {
   return (
-    <React.Fragment>
+    <div className="card-wrapper">
       {/* Background */}
       <Background />
       {/* Info card */}
@@ -13,7 +13,7 @@ const App = () => {
         <AvatarImg />
         <SocialMediaIcons />
       </div>
-    </React.Fragment>
+    </div>
   );
 };
 

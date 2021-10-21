@@ -36,21 +36,17 @@ body {
   min-height: 100vh;
 }
 
-.portfolio-wrapper {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
+.card-wrapper {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
 }
 
 #tsparticles {
   position: fixed;
   width: 100%;
-  height: 100vh;
+  height: 177%;
   overflow: hidden;
 }
 
@@ -97,6 +93,8 @@ body {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  margin-bottom: 3rem;
+  margin-top: 4rem;
 }
 .portfolio-wrapper .avatar-wrapper .MuiAvatar-root {
   width: 150px;
@@ -111,6 +109,7 @@ body {
 .portfolio-wrapper .avatar-wrapper .my-name {
   font-family: "Festive", cursive;
   white-space: nowrap;
+  z-index: 2;
 }
 
 @media (max-width: 1000px) {
@@ -128,8 +127,7 @@ body {
   }
 }
 .contacts {
-  max-width: 100%;
-  min-width: 300px;
+  max-width: 800px;
   min-height: 350px;
   word-wrap: break-word;
   background: rgba(255, 255, 255, 0.2);
@@ -154,6 +152,9 @@ body {
 .contacts .social-media-icons {
   display: flex;
   gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .contacts .social-media-icons li {
   padding: 2rem;
@@ -201,7 +202,8 @@ body {
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
 }
-.contacts .social-media-icons li:hover::before, .contacts .social-media-icons li:focus::before {
+.contacts .social-media-icons li:hover::before,
+.contacts .social-media-icons li:focus::before {
   transform: skewX(45deg) translateX(-150px);
   -webkit-transform: skewX(45deg) translateX(-150px);
   -moz-transform: skewX(45deg) translateX(-150px);

@@ -35,15 +35,16 @@ body {
   min-height: 100vh;
 }
 
+.card-wrapper {
+  width: 100%;
+  height: 100%;
+  // because it's a single card
+  display: grid;
+  place-items: center;
+}
+
 .portfolio-wrapper {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
+  // margin-top: 4rem;
 }
 
 @import './background';
